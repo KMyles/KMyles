@@ -10,4 +10,5 @@
 -
 - This project is based around a teensy 4.0/4.1 processor using the OpenAudio DSP Library
 - All devices are run over I2C 2 wire buss making the processor assembly / display /controls/and tuning easy to assemble
+- 
 - Enjoy!
