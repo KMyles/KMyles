@@ -1,6 +1,6 @@
 -  Hi,Everyone!
 -  Welcome to Keiths "Easy Build" SDR radio Receiver RX Repository...
--  This project is put together to support SDR radio building Faebook Site "Keiths_SDR"
+-  This project is put together to support SDR radio building Facebook Site "Keiths_SDR"
 -  Additional Information can be found at "keithSDR@groups.io"
 -  The SDR Receiver is for "High Frequency" reception covering 640kHz up to 55 MHz with a primary focus on CW/SSB reception.
 -  The project uses off the shelf components available through Ebay.com or Amazon.com 
