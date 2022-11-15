@@ -18,8 +18,10 @@
    All code is in the public domain .
  
  Big Thanks to Bob  W7PUA for a super DSP library 
+ 
  Big Thanks to Mike K7MDL for the super spectrum waterfall display code for the RA8875 
- Big Thanks to Giuseppe CAllipo IK8YFW for the Convolutional filter code!! 
+ 
+ Big Thanks to Giuseppe Callipo IK8YFW for the Convolutional filter code!! 
   
   THIS BUILD has a convolutional filter 
     
