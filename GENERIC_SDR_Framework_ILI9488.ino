@@ -15,8 +15,25 @@
  *        
  *       si5351  NT7s Library available in your arduino ide library tool..
  * 
- * 
- * 
+ *   EXTERNAL A/D and D/A converters
+ *   COmmon Ones 
+ *   PCM1802
+ *   DAC5402
+ *   
+ *   Both Devices need Teensy pins set up hardware wise 
+ *
+ *   Teensy 4.0/4.1
+ *   MCLK1 ----    Pin 23    
+ *   BCLK1 -----   Pin 23 
+ *   IN1 (Data)    Pin 7
+ *   OUT1C (Data)  Pin 8
+ *
+ *   Note Some devices do not use MCLK1 They derive clock from B Clock  
+ *  
+ *   https://www.ebay.com/itm/125254850441  I used this A/D
+ *   https://www.ebay.com/itm/311704263039  I used this D/A 
+ *
+ *
  * Note the following pinouts have changed 
  * 
  * for display portion
