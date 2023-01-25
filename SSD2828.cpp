@@ -164,11 +164,12 @@ void SSD2828::initialize(void)
   SPI_WriteData(0x00);
 
   SPI_WriteCmd(0xBA);   // PLL=(TX_CLK/MS)*NS
-  SPI_WriteData(0x20);  // 14,D7-0=NS(0x01 : NS=1)
+//  SPI_WriteData(0x20);  // 14,D7-0=NS(0x01 : NS=1)
+  SPI_WriteData(0x25);  // 14,D7-0=NS(0x01 : NS=1)
   SPI_WriteData(0x82);  // 42,D15-14=PLL00=62.5-125 01=126-250 10=251-500 11=501-1000  DB12-8=MS(01:MS=1)
 
   SPI_WriteCmd(0xBB);   // LP Clock Divider LP clock = 400MHz / LPD / 8 = 480 / 8/ 8 = 7MHz
-  SPI_WriteData(0x07);  // D5-0=LPD=0x1 ¨C Divide by 2
+  SPI_WriteData(0x07);  // D5-0=LPD=0x1 Â¨C Divide by 2
   SPI_WriteData(0x00);
 
   SPI_WriteCmd(0xb9);
@@ -459,11 +460,12 @@ void SSD2828::initialize(void)
   SPI_WriteData(0x00);
 
   SPI_WriteCmd(0xBA);
-  SPI_WriteData(0x20);  // 14,D7-0=NS(0x01 : NS=1)
+//  SPI_WriteData(0x20);  // 14,D7-0=NS(0x01 : NS=1)
+  SPI_WriteData(0x25);  // 14,D7-0=NS(0x01 : NS=1)
   SPI_WriteData(0x82);  // 42,D15-14=PLL00=62.5-125 01=126-250 10=251-500 11=501-1000  DB12-8=MS(01:MS=1)
 
   SPI_WriteCmd(0xBB);   // LP Clock Divider LP clock = 400MHz / LPD / 8 = 480 / 8/ 8 = 7MHz
-  SPI_WriteData(0x07);  // D5-0=LPD=0x1 ¨C Divide by 2
+  SPI_WriteData(0x07);  // D5-0=LPD=0x1 Â¨C Divide by 2
   SPI_WriteData(0x00);
 
   SPI_WriteCmd(0xb9);
@@ -499,7 +501,7 @@ void SSD2828::initialize(void)
 
   SPI_WriteCmd(0xB2);
   SPI_WriteData(0xa0);  // HBPD 0x64=100
-  SPI_WriteData(0x0a);  // VBPD 8 ¼õÐ¡ÏÂÒÆ
+  SPI_WriteData(0x0a);  // VBPD 8 Â¼ÃµÃÂ¡ÃÃ‚Ã’Ã†
 
   SPI_WriteCmd(0xB3);
   SPI_WriteData(0xa0);  // HFPD 8
@@ -515,7 +517,7 @@ void SSD2828::initialize(void)
 
 
   SPI_WriteCmd(0xB6);   // RGB CLK  16BPP=00 18BPP=01
-  SPI_WriteData(0x0b);  // D7=0 D6=0 D5=0  D1-0=11 ¨C 24bpp   //07
+  SPI_WriteData(0x0b);  // D7=0 D6=0 D5=0  D1-0=11 Â¨C 24bpp   //07
   SPI_WriteData(0x00);  // D15=VS D14=HS D13=CLK D12-9=NC D8=0=Video with blanking packet. 00-F0
 
   //MIPI lane configuration

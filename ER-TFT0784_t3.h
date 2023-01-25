@@ -9,10 +9,10 @@ class ER_TFT0784_t3 : public RA8876_t3 {
                   const uint8_t mosi_pin = 11,
                   const uint8_t sclk_pin = 13,
                   const uint8_t miso_pin = 12,
-                  const uint8_t cs_2828_pin = 24,
-                  const uint8_t rst_2828_pin = 25,
-                  const uint8_t sdi_2828_pin = 26,
-                  const uint8_t sck_2828_pin = 27) :
+                  const uint8_t cs_2828_pin = 15,
+                  const uint8_t rst_2828_pin = 17,
+                  const uint8_t sdi_2828_pin = 4,
+                  const uint8_t sck_2828_pin = 16) :
         RA8876_t3(CSp, RSTp, mosi_pin, sclk_pin, miso_pin)
     {
       displayDimensions(400,1280);

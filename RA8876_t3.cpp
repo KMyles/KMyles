@@ -2255,9 +2255,9 @@ RGB Format [7:0] = RRRGGGBB.
 void RA8876_t3::Set_Graphic_Cursor_Color_2(unsigned char temp)
 {
 /*
-REG[45h] Graphic Cursor Color 1 with 256 Colors
+ * REG[45h] Graphic Cursor Color 1 with 256 Colors
 RGB Format [7:0] = RRRGGGBB.
-*/  
+*/ 
   lcdRegDataWrite(RA8876_GCC1,temp);
 }
 
