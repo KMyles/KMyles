@@ -1,13 +1,9 @@
--  Hi,Everyone!
--  Welcome to Keiths "Easy Build" SDR radio Receiver RX Repository...
--  This project is put together to support SDR radio building Faebook Site "Keiths_SDR"
--  Additional Information can be found at "keithSDR@groups.io"
--  The SDR Receiver is for "High Frequency" reception covering 640kHz up to 55 MHz with a primary focus on CW/SSB reception.
--  The project uses off the shelf components available through Ebay.com or Amazon.com 
--  
--  I can be reached at either of the above sites
--  or via email .. myleskeith@gmail.com
--
-- This project is based around a teensy 4.0/4.1 processor using the OpenAudio DSP Library
-- All devices are run over I2C 2 wire buss making the processor assembly / display /controls/and tuning easy to assemble
-- Enjoy!
+- This is the DSP chain with pass-thru updated with 2 x Hilbert 251 tap filters to provide the necessary phase shift to subtract sideband out from your I/Q receiver module.
+
+The filters feed a summer which will remove "Q" from "I" and produce lower sideband ...
+
+Please read the notes in the .ino file 
+additional info for the encoder pinout is in the VFO module 
+
+Enjoy
+K
